@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/style.css" rel="stylesheet" media="screen" type="text/css" />
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmspath/}/images/js/j.js" ></script>
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/pic_scroll.js"></script>
+<script language=" " type="text/javascript">
+<!--
+	$(function(){
+		$("a[_for]").mouseover(function(){
+			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+			$(this).addClass("thisclass").blur();
+			$("#"+$(this).attr("_for")).show();
+		});
+		$("a[_for=uc_member]").mouseover();
+		$("a[_for=flink_1]").mouseover();
+	});
+	
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+-->
+</script>
+</head>
+<body>
+<div class="qzjz">
+<!-------------首页顶部开始------------->	
+	<div class="index_welcome content">
+			<div class="index_welcome_l">欢迎光临国际婚姻家庭咨询协会网站！</div>
+			<div class="index_welcome_r"><span id="weichart"><a href="">官方微信∨</a></span>&nbsp;|&nbsp;<a href=# onclick="javascript:addFavorite2()">收藏我们</a>&nbsp;|&nbsp;帮助中心&nbsp;|&nbsp;全国统一咨询热线<span class="bianse_welcome">4006-520-017</span></div>
+	</div>
+	<div id="qrcode"><img src="{dede:global.cfg_templets_skin/}/images/qrcode.jpg"/></div>
+<!--hr线条-->
+<div class="index_hr bg_content"></div>
+<!--首页导航栏-->
+<div class="index_mnue bg_content">
+				<div class="mnue1"></div>
+				<div class="mnue2"><a href=""><img src="{dede:global.cfg_templets_skin/}/images/mnue2.jpg"/></a></div>
+				<div class="mnue3"><a href=""><img src="{dede:global.cfg_templets_skin/}/images/mnue3.jpg"/></a></div>
+				<div class="mnue4"><a href=""><img src="{dede:global.cfg_templets_skin/}/images/mnue4.jpg"/></a></div>
+				<div class="mnue5"><a href="#dskecheng"><img src="{dede:global.cfg_templets_skin/}/images/mnue5.jpg"/></a></div>
+				<div class="mnue5"><a href="#gjrenzheng"><img src="{dede:global.cfg_templets_skin/}/images/mnue6.jpg"/></a></div>
+				<div class="mnue5"><a href="#hyluntan"><img src="{dede:global.cfg_templets_skin/}/images/mnue7.jpg"/></a></div>
+				<div class="mnue6"></div>
+</div>
+<!-------------首页顶部结束------------->	
+
+
+<!--首页banner图1600px*442px-->
+<div class="index_banner bg_content"></div>
+<!--间隙-->
+<div class="index_jianxi"></div>
+
+
+<!-------------首页第一版内容开始------------->
+<!--协会头条模块开始-->
+<div class="index_content1 content">
+		<div class="index_content1_l ">
+				<div class=" index_content1_title ">
+					<!--标题小图标-->
+					<div class="icons"></div>
+					<!--标题中文-->
+					<span class="title_zw">
+						{dede:type typeid='1'}[field:typename /]{/dede:type}
+					</span>
+					<!--标题英文-->
+					<span class="title_yw">
+					 			<a href="{dede:type typeid='1'}[field:typeurl /]{/dede:type}">HEADLINES</a>
+				 </span>
+					</div>
+					<div class="content1_content">
+					 <!-- 幻灯片效果-->
+				   <script language='javascript'>
+								linkarr = new Array();
+								picarr = new Array();
+								textarr = new Array();
+								var swf_width=290;
+								var swf_height=220;
+								//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+								var configtg='0x646464|1|0xffffff|5|0xffffff|0xcb0000|0xbcb6ba|4|3|1|_blank';
+								var files = "";
+								var links = "";
+								var texts = "";
+								//这里设置调用标记
+								{dede:arclist flag='f' row='5'}
+								linkarr[[field:global.autoindex/]] = "[field:arcurl/]";
+								picarr[[field:global.autoindex/]]  = "[field:litpic/]";
+								textarr[[field:global.autoindex/]] = "[field:title function='html2text(@me)'/]";
+								{/dede:arclist}
+								for(i=1;i<picarr.length;i++){
+								if(files=="") files = picarr[i];
+								else files += "|"+picarr[i];
+								}
+								for(i=1;i<linkarr.length;i++){
+								if(links=="") links = linkarr[i];
+								else links += "|"+linkarr[i];
+								}
+								for(i=1;i<textarr.length;i++){
+								if(texts=="") texts = textarr[i];
+								else texts += "|"+textarr[i];
+								}
+								document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+								document.write('<param name="movie" value="{dede:global.cfg_templeturl /}/default/images/bcastr3.swf"><param name="quality" value="high">');
+								document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+								document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
+								document.write('<embed src="{dede:global.cfg_templeturl /}/default/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+								</script>			
+					</div>
+		</div>
+		<!--协会头条模块结束-->
+		
+		<!--协会新闻模块开始-->
+		<div class="index_content1_c ">			
+		   <div class="index_content1_title">
+					<div class="icons2"></div>
+					<span class="title_zw">
+							{dede:type typeid='2'}[field:typename /]{/dede:type}
+					</span>
+					<span class="title_yw">
+							<a href="{dede:type typeid='2'}[field:typeurl /]{/dede:type}">ASSOCIATION NEWS</a>
+					</span>
+			</div>
+			<div class="content1_content2">
+				{dede:arclist row=3 titlelen=80 orderby='id' orderway='desc' typeid=2}
+					<div class="mukuai02">
+						<div class="mukuai02_img">[field:image/]</div>
+						<div class="mukuai02_title"> <a href='[field:arcurl/]' target='_black'>[field:title/]</a></div>
+						<div class="mukuai02_text"></div>
+					</div>
+					{/dede:arclist}
+					{dede:sql sql="SELECT body  FROM `dede_addonarticle`  where typeid = 2 ORDER BY aid DESC limit 3"}
+						<div class="mukuai02_text2">[field:body function='cn_substr(html2text(@me),160)'/]...</div>
+					{/dede:sql}
+				</div>
+		</div>
+		<!--协会新闻模块结束-->
+		
+		<!--央视报道模块开始-->
+		<div class="index_content1_r" >			
+		<div class="index_content1_title">
+			<div class="icons3"></div>
+			<span class="title_zw">央视报道</span>
+			<span class="title_yw">
+					<a name='#'>MEMBERS</a>
+			</span>
+			</div>
+			<div class="content1_content">	
+				<!--<video width="290" height="290" controls>
+					    <source src="{dede:global.cfg_templets_skin/}/mp4/1.mp4" type="video/mp4">
+					    <source src="movie.ogg" type="video/ogg">
+					    抱歉，您的浏览器不支持视频插件。
+					</video>
+					-->
+			</div>
+		</div>
+		<!--央视报道模块结束-->
+</div>
+<!-------------首页第一版内容结束------------->
+<!--间隙-->
+	<div class="index_jianxi50px"></div>
+	
+<!-------------首页第二版内容开始------------->
+	<div class="index_mnue2 bg_content">
+		<!--导航栏2开始-->
+		<div class="content02">
+			<div class="index_mnue2_hei">
+					<div class="mnue2_text1">情感咨询</div>
+					<span class="mnue2_text1_1">EMOTIONAL COUMSELING</span>
+			</div>
+			<div class="index_mnue2_lan"><div class="iconss1 icongg"></div><div class="mnue2_text2">挽回爱情</div></div>
+			<div class="index_mnue2_hui"><div class="iconss2 icongg"></div><div class="mnue2_text2">婚姻保鲜</div></div>
+			<div class="index_mnue2_lan"><div class="iconss3 icongg"></div><div class="mnue2_text2">婚恋课程</div></div>
+			<div class="index_mnue2_hui"><div class="iconss4 icongg"></div><div class="mnue2_text2">专业团队</div></div>
+			<div class="index_mnue2_lan"><div class="iconss5 icongg"></div><div class="mnue2_text2">客户见证</div></div>
+			<div class="index_mnue2_hui"><div class="iconss6 icongg"></div><div class="mnue2_text2">新闻资讯</div></div>
+			<!--导航栏2结束-->
+			<!--服务流程大图bg-->
+			<div class="index_liucheng"><img src="{dede:global.cfg_templets_skin/}/images/liucheng.jpg"/></div>
+			<!--服务流程大图ed-->
+		</div>
+	</div>
+	<!-------------首页第二版内容结束------------->
+	
+	
+	<!-------------首页第三版内容开始------------->
+	<div class="index_course content" id="dskecheng">
+		<div class="index_course_title">
+			<div class="span01">大师课程</div>
+			<div class="span02">MASTER&nbsp;COURRSE</div>
+		</div>
+		<!--IMFCA父母公益课-->
+		<div class="index_course_content">
+				<div class="course_title"><div>IMFCA父母公益课</div></div>
+				<a href="http://localhost:9999/ZGHYGQXH/plus/view.php?aid=10" target='_black'><div class="course_content"></div></a>
+		</div>
+		<!--父母情商-->
+		<div class="index_course_contentr">
+				<div class="course_title"><div>父母情商</div></div>
+				<a href="http://localhost:9999/ZGHYGQXH/plus/view.php?aid=11" target='_black'><div class="course_content2"></div></a>
+		</div>
+		<!--未来领袖高情商特训营-->
+		<div class="index_course_contentr">
+			<div class="course_title"><div>未来领袖高情商特训营</div></div>
+			<a href="http://localhost:9999/ZGHYGQXH/plus/view.php?aid=12" target='_black'><div class="course_content3"></div></a>
+		</div>
+		<!--灵魂唤醒-->
+		<div class="index_course_contentr">
+			<div class="course_title"><div>灵魂唤醒</div></div>
+			<a href="http://localhost:9999/ZGHYGQXH/plus/view.php?aid=13" target='_black'><div class="course_content4"></div></a>
+		</div>
+	</div>
+<!-------------首页第三版内容结束------------->
+		
+		
+<!-------------首页第四版内容开始------------->	
+	<div class="index_peixun content" id="gjrenzheng">
+		<!--大标题-->	
+		<div class="index_peixun_title">
+			<div class="span01">国际认证</div>
+			<div class="span02">PARENTING&nbsp;EDUCATION</div>
+		</div>
+		<!--国际特许注册婚姻家庭咨询师认证课程模块-->
+		<a href="http://localhost:9999/ZGHYGQXH/plus/view.php?aid=14" target='_black'>
+					<div class="index_peixun_content"></div>
+		</a>
+		<!--国际催眠治疗师认证课程模块-->
+		<a href="http://localhost:9999/ZGHYGQXH/plus/view.php?aid=15" target='_black'>
+					<div class="index_peixun_content2"></div>
+	  </a>
+	  <!--合作机构模块-->
+		<div class="index_peixun_contentr">
+					<div class="hzjg"><a href="#"><img src="{dede:global.cfg_templets_skin/}/images/hzjg.jpg"/></a></div>
+					<div class="hzjg2"><a href="#"><img src="{dede:global.cfg_templets_skin/}/images/hzjg.jpg"/></a></div>
+					<div class="hzjg2"><a href="#"><img src="{dede:global.cfg_templets_skin/}/images/hzjg.jpg"/></a></div>
+					<div class="hzjg2"><a href="#"><img src="{dede:global.cfg_templets_skin/}/images/hzjg_dibu.jpg"/></a></div>
+		</div>
+	</div>
+<!-------------首页第四版内容结束------------->	
+
+
+<!-------------首页第五版内容开始------------->	
+	<div class="content_teacher content">
+		<div class="line_lANDr">
+			<div>讲师团队&nbsp;/&nbsp;LECTURER&nbsp;TEAM </div>
+		</div>
+	</div>
+	
+	<div class="teacher_title content"> 
+		<div class="blue_bg" id="blue_bg">刘轩睿老师</div>
+		<div class="blue_bg" id="blue_bg2">方小艺老师</div>
+		<div class="blue_bg" id="blue_bg3">张华老师</div>
+		<div class="blue_bg" id="blue_bg4">吴娟瑜老师</div>
+		<div class="blue_bg" id="blue_bg5">黄菡老师</div>
+		<div class="blue_bg" id="blue_bg6">曾子航老师</div>
+		<div class="blue_bg" id="blue_bg7">周小鹏老师</div>
+	</div>
+	<div class="teacher_content content">
+			<div class="diban">
+				 <div class="teacher_img"><img src="" id="JS_img"/></div>
+				 <div class="teacher_text">
+				 	 <h1 id="JS_name"></h1>
+					<span id="JS_jieshao"></span>
+				 </div>
+				 <div id="go_left" > <img src="{dede:global.cfg_templets_skin/}/images/left.gif"/> </div>
+				  <div id="go_right"> <img src="{dede:global.cfg_templets_skin/}/images/right.gif"/> </div>
+			</div>
+	</div>
+<!-------------首页第五版内容结束------------->	
+
+
+<!-------------首页第六版内容开始------------->	
+	<div class="index_xueshu content" id="hyluntan">
+		<div class="index_xueshu_title">
+			<div class="span01">行业论坛</div>
+			<div class="span02">PARENTING&nbsp;EDUCATION</div>
+		</div>
+		<!--国际婚姻家庭论坛模块-->
+		<div class="index_xueshu_content">		
+					<div class="lt_head">国际婚姻家庭论坛</div>
+					<div class="lt_more"><a href="{dede:type typeid='6'}[field:typeurl /]{/dede:type}"><img src="{dede:global.cfg_templets_skin/}/images/more.jpg"/></a></div>
+					{dede:arclist row=1 titlelen=80 orderby='id' orderway='desc' typeid=6}
+					<div class="lt_img"><a href='[field:arcurl/]' target='_black'>[field:image/]</a></div>
+					<div class="lt_diban">
+							<div class="lt_title"><a href='[field:arcurl/]' target='_black'>[field:title/]</a></div>
+					{/dede:arclist}
+					{dede:sql sql="SELECT body  FROM `dede_addonarticle`  where typeid = 6 ORDER BY aid DESC limit 1"}
+							<div class="lt_content">[field:body function='cn_substr(html2text(@me),300)'/]...</div>
+					{/dede:sql}					
+					</div>
+					<div class="lt_left">
+						{dede:arclist row=5 titlelen=80 orderby='id' orderway='desc' typeid=6}
+							<div class="getneirong"><a href='[field:arcurl/]' target='_black'>[field:title/]</a></div>
+						{/dede:arclist}
+					</div>
+					<div class="lt_right">
+						{dede:arclist row=5 titlelen=80 orderby='id' orderway='asc' typeid=6}
+							<div class="getneirong"><a href='[field:arcurl/]' target='_black'>[field:title/]</a></div>
+						{/dede:arclist}
+					</div>	
+		</div>
+		<!--IMFCA父母公益课程模块-->
+		<div class="index_xueshu_contentr">
+					<div class="lt_head">IMFCA父母公益课程</div>
+					<div class="lt_more"><a href="{dede:type typeid='8'}[field:typeurl /]{/dede:type}"><img src="{dede:global.cfg_templets_skin/}/images/more.jpg"/></a></div>
+					{dede:arclist row=1 titlelen=80 orderby='id' orderway='desc' typeid=8}
+					<div class="lt_img2"><a href='[field:arcurl/]' target='_black'>[field:image/]</a></div>
+					{/dede:arclist}
+					<div class="lt_list">
+						{dede:arclist row=5 titlelen=80 orderby='id' orderway='desc' typeid=8}
+						<ul>
+								<li><a href='[field:arcurl/]' target='_black'>[field:title/]</a></li>
+						</ul>	
+						{/dede:arclist}
+					</div>
+		</div>
+	</div>
+<!-------------首页第六版内容结束------------->	
+
+<!-------------首页底部开始------------->	
+	<div class="index_footer bg_content">
+		<div class="footer_logo"></div>
+		<div class="footer_text_con">
+			<span><a href="{dede:global.cfg_cmsurl/}/">协会首页</a></span>
+			<span>公益咨询</span>
+			<span>大师课程</span>
+			<span>国际认证</span>
+			<span>行业论坛</span>
+		</div>
+	</div>
+	<div class="index_end content">
+		<p>CopyRight @2010-2012&nbsp;国际婚姻家庭咨询师协会 &nbsp;官方网站 All &nbsp;Rights&nbsp; Reserved</p>
+		<p>Tel:00852-9669759 Fax:00852-21100996 大陆电话：4006-520-017 Email：imfca@126.com</p>
+		<p>总部地址：香港中环130-132号大生银行大厦</p>
+	</div>
+<!-------------首页顶部结束------------->	
+</div>
+</body>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/soulsjie.js"></script>
+</html>

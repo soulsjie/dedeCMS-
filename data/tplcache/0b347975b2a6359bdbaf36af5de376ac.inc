@@ -1,0 +1,1 @@
+<div class="lt_contents">[field:body function='cn_substr(html2text(@me),160)'/]...</div>

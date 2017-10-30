@@ -1,0 +1,1 @@
+<h2>[field:body function='cn_substr(html2text(@me),100)'/]</h2>

@@ -1,0 +1,1 @@
+<li>[field:image/][field:textlink/]</li>

@@ -1,0 +1,1 @@
+<li>[field:image/] <div target="_blank">[field:textlink/]</div></li>

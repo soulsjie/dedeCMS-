@@ -1,0 +1,1 @@
+<li>[field:image/] <h1><a href='[field:arcurl/]' target='_black'>[field:title/]</a></h1><h2>[field:keyword function=cn_substr(Html2Text(@me),50)/]...<br/></h2> </li>

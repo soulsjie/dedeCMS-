@@ -1,0 +1,1 @@
+<div class="lt_img2"><a href='[field:arcurl/]' target='_black'>[field:image/]</a></div>

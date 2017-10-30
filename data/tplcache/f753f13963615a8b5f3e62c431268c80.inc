@@ -1,0 +1,1 @@
+[field:body function=cn_substr(Html2Text(@me),600)/]<br/>

@@ -1,0 +1,1 @@
+<a href="[field:arcurl/]"><div class="course_content"></div></a>

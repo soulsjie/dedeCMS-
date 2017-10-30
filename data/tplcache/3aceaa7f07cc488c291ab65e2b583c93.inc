@@ -1,0 +1,1 @@
+<div class="list01_bg"><a href='[field:arcurl/]' target='_black'>[field:title/]</a></div>

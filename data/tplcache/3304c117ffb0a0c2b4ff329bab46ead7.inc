@@ -1,0 +1,1 @@
+echo "[field:body function=cn_substr(Html2Text(@me),50)/]...<br/>";

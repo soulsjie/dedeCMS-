@@ -1,0 +1,1 @@
+<div class="mukuai02_text">[field:body function='cn_substr(html2text(@me),100)'/]</div>

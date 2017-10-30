@@ -1,0 +1,1 @@
+{dede:arclist row=3 titlelen=80 orderby='id' orderway='desc' typeid=2}<li>[field:image/] <h1><a href='[field:arcurl/]' target='_black'>[field:title/]</a></h1><h2>[field:body function='cn_substr(html2text(@me),100)'/]...<br/></h2> </li>{/dede:arclist}
